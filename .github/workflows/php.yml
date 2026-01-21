@@ -17,6 +17,7 @@ jobs:
       uses: php-actions/composer@v6
       with:
         php_extensions: sockets pdo_pgsql
+        php_version: 7.2
     
     - name: PHPCS
       run: composer run phpcs
